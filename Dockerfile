@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:19.7-bullseye-slim
+FROM node:14
 COPY . /app
 WORKDIR /app
 RUN yarn install -y
