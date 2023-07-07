@@ -2,6 +2,6 @@
 FROM node:10
 COPY . /app
 WORKDIR /app
-RUN yarn install -y
+RUN npm install --force
 EXPOSE 8000
-ENTRYPOINT ["yarn", "start"]
+ENTRYPOINT ["npm", "start"]
