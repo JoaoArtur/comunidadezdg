@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:6
+FROM node:10
 COPY . /app
 WORKDIR /app
 RUN yarn install -y
